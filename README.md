@@ -29,11 +29,11 @@
 
 ###### npm依赖冲突
 
-在配置`rimraf`等工具过程中出现`npm`依赖版本冲突，具体是 `svelte-preprocess@4.6.1` 和 `postcss-load-config@3.0.0` 之间的版本不兼容
+在配置 `rimraf`等工具过程中出现 `npm`依赖版本冲突，具体是 `svelte-preprocess@4.6.1` 和 `postcss-load-config@3.0.0` 之间的版本不兼容
 
 解决方法（我采用的）：
 
-**降级**`b`
+**降级** `b`
 
 ```
 npm uninstall postcss-load-config
@@ -44,9 +44,10 @@ npm install postcss-load-config@2.1.2 --save-dev
 
 直接在vscode插件中安装
 
-
 ## 运行
 
 ```
 npm run dev
 ```
+
+打开链接即可
