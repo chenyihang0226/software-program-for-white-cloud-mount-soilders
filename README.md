@@ -86,9 +86,9 @@ npm run dev
 
 第一步，写一个`xxxTest`函数并export导出它。
 
-第二步，打开`src\components\Controls\ActionBar\Actions.svelte`，修改36行左右的`<button class="btn btn-round" disabled={$gamePaused} on:click={possibleNumberSolverTest($userGrid)} title="Test">`里的on:click为你的测试函数(记得在头部导入你的测试函数)
+第二步，打开`src\components\Controls\ActionBar\Actions.svelte`，在头部导入你的测试函数，如`import { possibleNumberSolverTest } from '@sudoku/solver';`
 
-第三步，编译运行，打开页面，点一下功能栏的烧杯，就会运行对应测试函数，测试函数写`console.log(yourfunction)`，就可以把你写的函数运行结果输出到控制台，就可以看代码写的对不对了。可以看到类似这样的输出:
+第三步，编译运行，打开页面，点一下功能栏的烧杯，输入对应测试函数的名字(测试函数里写`console.log(yourfunction)`),就可以把你写的函数运行结果输出到控制台，就可以看代码写的对不对了。可以看到类似这样的输出:
 ```
 ⌵ (1) [{…}]                                                             solver.js:168
   > 0: {idx: 74, value: 6}
