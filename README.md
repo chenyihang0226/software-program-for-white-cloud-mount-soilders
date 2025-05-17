@@ -235,3 +235,16 @@ JS有两种风格，CommonJS和ECMASrcipts，后端引擎nodejs默认是CommonJS
 import solve from '@mattflow/sudoku-solver'; //项目根目录能找到外部包
 import { BOX_SIZE, GRID_LENGTH, SUDOKU_SIZE, GRID_COORDS } from '@sudoku/constants'; //上上级目录能找到我们自定义的node_module
 ```
+
+
+## 实现功能
+
++ possible number solver 
+
++ Test button in Page for developer to debug
+
++ backtracking 
+
++ undo redo feature
+
++ import sudoku from SudokuWiki 
